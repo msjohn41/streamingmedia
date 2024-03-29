@@ -231,6 +231,7 @@ dl{
 }
 dt{
     padding-right: 5px;
+    font-style: italic;
 }
 audio{
     position: absolute;
