@@ -178,7 +178,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-/* body style */
+/* trending styles */
 #trending{
     display: inline-block;
 }
@@ -216,6 +216,11 @@ dl{
 }
 dt{
     padding-right: 5px;
+}
+audio{
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
 }
 #trending ::-webkit-scrollbar {
 
