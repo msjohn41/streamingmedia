@@ -192,6 +192,14 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     color:#590242;
     font-weight: bold;
 }
+#trending .btn{
+    display: inline-block;
+    background-color: #590242;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
 .scroll{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -222,28 +230,17 @@ audio{
     left: 5px;
 }
 #trending ::-webkit-scrollbar {
-
+    width: 15px;
 }
 #trending ::-webkit-scrollbar-track {
-
+    box-shadow: inset 0 0 15px #590242;
 }
 #trending ::-webkit-scrollbar-thumb {
-
+    background-color: #590242;
+    border-radius: 5px;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-
-}
-#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
-}
-#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
-}
-#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
-}
-#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
+    background: #020659;
 }
 audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
@@ -264,10 +261,14 @@ audio::-webkit-media-controls-enclosure {
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
+    padding: 15px;
+    background-color: #2699fb;
 }
 #your-playlists section{
-    background-color: #2699fb;
+    background-color: #0d8dfb;
     color: #ffffff;
+    padding: 0px 10px;
+    margin: 0px 10px;
 }
 #your-playlists h2{
     color:#590242;
@@ -280,9 +281,30 @@ audio::-webkit-media-controls-enclosure {
     padding: 5px;
     text-align: center;
 }
-#your-playlists p{
+#your-playlists div p{
     padding: 5px;
     text-align: center;
+}
+#your-playlists .btn{
+    display: inline-block;
+    background-color: #590242;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+#your-playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+}
+#your-playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+#your-playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+#your-playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
 }
 
 
@@ -292,10 +314,14 @@ audio::-webkit-media-controls-enclosure {
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
+    padding: 15px;
+    background-color: #2699fb;
 }
 #curated-playlists section{
-    background-color: #2699fb;
+    background-color: #0d8dfb;
     color: #ffffff;
+    padding: 0px 10px;
+    margin: 0px 10px;
 }
 #curated-playlists h2{
     color:#590242;
@@ -308,13 +334,36 @@ audio::-webkit-media-controls-enclosure {
     padding: 5px;
     text-align: center;
 }
-#curated-playlists p{
+#curated-playlists div p{
     padding: 5px;
     text-align: center;
 }
-
+#curated-playlists .btn{
+    display: inline-block;
+    background-color: #590242;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+#curated-playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+}
+#curated-playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+#curated-playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+#curated-playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
 
 /* footer styles */
 footer p{
+    padding: 15px;
+    text-align: center;
     font-size: .75em;
+    color: #590242;
 }
