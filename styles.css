@@ -55,4 +55,211 @@ body {
     width: 375px;
     margin: 0 auto;
     background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 1.25em;
+}
+h2, h3{
+    font-size: 1em;
+}
+p, dl, dd{
+    font-size: 1em;
+}
+
+/* header styles */
+
+header {
+    margin-top: 59px;
+    padding-bottom: 20px;
+    background: rgb(33,4,217);
+    background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,6,89,1) 33%, rgba(2,6,89,1) 66%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+}
+header h1{
+    margin: auto;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+header p{
+    margin: auto;
+    padding: 10px 15px;
+    line-height: 1.25em;
+}
+nav {
+    width: 375px;
+    background-color: #030A8C;
+    position: absolute;
+    top: 0;
+    z-index:1;
+    text-transform: uppercase;
+}
+nav ul {
+    text-align: center;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #2104D9;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+[href="#home"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    padding: 16px 16px;
+}
+a:hover, input:hover {
+    background-color: #590242;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+/* body style */
+#trending{
+    display: inline-block;
+}
+
+#trending h2{
+    color:#590242;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 10px;
+}
+#trending h3{
+    color:#590242;
+    font-weight: bold;
+}
+.scroll{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll section{
+    margin: 10px;
+    position: relative;
+}
+.scroll div{
+    position: absolute;
+    top: 251px;
+    background-color: rgb(255, 255, 255, .75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+dl{
+    display: flex;
+}
+dt{
+    padding-right: 5px;
+}
+#trending ::-webkit-scrollbar {
+
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: rgb(255, 255, 255, .5);
+}
+
+/* main styles */
+
+
+
+
+
+/* footer styles */
+footer p{
+    font-size: .75em;
 }
