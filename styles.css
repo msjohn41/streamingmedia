@@ -59,9 +59,11 @@ body {
 }
 h1{
     font-size: 1.25em;
+    text-transform: uppercase;
 }
 h2, h3{
     font-size: 1em;
+    text-transform: uppercase;
 }
 p, dl, dd{
     font-size: 1em;
@@ -179,9 +181,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 /* trending styles */
-#trending{
-    display: inline-block;
-}
 
 #trending h2{
     color:#590242;
@@ -258,10 +257,61 @@ audio::-webkit-media-controls-enclosure {
     background-color: rgb(255, 255, 255, .5);
 }
 
-/* main styles */
+
+/* your playlists styles */
+#your-playlists div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#your-playlists section{
+    background-color: #2699fb;
+    color: #ffffff;
+}
+#your-playlists h2{
+    color:#590242;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 10px;
+}
+#your-playlists h3{
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+#your-playlists p{
+    padding: 5px;
+    text-align: center;
+}
 
 
-
+/* curated playlists styles */
+#curated-playlists div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#curated-playlists section{
+    background-color: #2699fb;
+    color: #ffffff;
+}
+#curated-playlists h2{
+    color:#590242;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 10px;
+}
+#curated-playlists h3{
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+#curated-playlists p{
+    padding: 5px;
+    text-align: center;
+}
 
 
 /* footer styles */
