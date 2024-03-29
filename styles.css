@@ -193,6 +193,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #trending h3{
     color:#590242;
     font-weight: bold;
+    margin: 5px;
 }
 #trending .btn{
     display: inline-block;
@@ -224,6 +225,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 dl{
     display: flex;
+    color: #590242;
+    margin: 5px;
+    padding-top: 5px;
 }
 dt{
     padding-right: 5px;
