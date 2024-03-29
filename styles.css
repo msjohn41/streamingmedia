@@ -376,6 +376,7 @@ audio::-webkit-media-controls-enclosure {
 /* footer styles */
 footer p{
     padding: 15px;
+    margin: 25px;
     text-align: center;
     font-size: .75em;
     color: #590242;
