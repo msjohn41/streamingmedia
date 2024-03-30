@@ -409,6 +409,7 @@ footer p{
         text-transform: uppercase;
     }
     nav ul {
+        display: flex;
         text-align: center;
     }
     nav h2 {
@@ -443,30 +444,7 @@ footer p{
     a:hover, input:hover {
         background-color: #590242;
     }
-    label {
-        cursor: pointer;
-        display: inline-block;
-        padding: 28px 20px;
-        position: relative;
-        user-select: none;
-    }
-    label span {
-        background-color: #ffffff;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: background-color .2s ease-out;
-        width: 18px;
-    }
-    label span:before, label span:after {
-        background: #ffffff;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all .2s ease-out;
-        width: 100%;
-    }
+  
 
     /* trending */
     #trending .btn{
@@ -502,6 +480,7 @@ footer p{
     }
     #your-playlists section img{
         float:left;
+        padding-right: 5px;
     }
     #your-playlists h2{
         color:#590242;
@@ -565,6 +544,7 @@ footer p{
     }
     #curated-playlists section img{
         float:left;
+        padding-right: 5px;
     }
     #curated-playlists h2{
         color:#590242;
