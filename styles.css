@@ -72,7 +72,7 @@ p, dl, dd{
 /* header styles */
 
 header {
-    margin-top: 59px;
+    margin-top: 61px;
     padding-bottom: 20px;
     background: rgb(33,4,217);
     background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,6,89,1) 33%, rgba(2,6,89,1) 66%, rgba(0,0,0,1) 100%);
@@ -402,26 +402,32 @@ footer p{
     }
     nav {
         width: 834px;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+    }
+    ul{
+        background-color: #030A8C;
     }
     nav ul {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        height: auto;
         text-align: center;
+        overflow: visible;
+    }
+    nav li a{
+        padding: 14px 14px;
+        background-color: #030A8C;
     }
     nav li{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
     }
-    label{
-        display: none;
+    [href="#home"] {
+        position: static;
+        margin: auto;
+        background-color: #030A8C;
     }
-    input{
-        display: none;
-    }
-  
-    
+   label{
+    display: none;
+   }
+   
     /* trending */
     #trending .btn{
         display: inline-block;
