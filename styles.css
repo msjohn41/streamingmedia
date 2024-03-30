@@ -386,3 +386,141 @@ footer p{
     font-size: .75em;
     color: #590242;
 }
+
+/* media styles */
+@media screen and (min-width: 834px){
+    body {
+        width: 834px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .large-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* your playlist */
+    #your-playlists div{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 500px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px;
+        background-color: #2699fb;
+    }
+    #your-playlists section{
+        display: block;
+        background-color: #0d8dfb;
+        color: #ffffff;
+        padding: 0px 10px;
+        margin: 10px 10px;
+    }
+    #your-playlists section img{
+        float:left;
+    }
+    #your-playlists h2{
+        color:#590242;
+        font-weight: bold;
+        font-size: 1.25em;
+        padding: 10px;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    #your-playlists h3{
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+    }
+    #your-playlists div p{
+        padding: 5px;
+        text-align: center;
+    }
+    #your-playlists .btn{
+        float: right;
+        background-color: #590242;
+        color: #ffffff;
+        padding: 10px;
+        margin: 10px 25px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+    }
+    #your-playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+        width: 15px;
+    }
+    #your-playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+    #your-playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+    #your-playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+
+    /* curated */
+   
+    #curated-playlists div{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 500px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px;
+        background-color: #020695;
+        
+    }
+    #curated-playlists section{
+        display: block;
+        background-color: #020873;
+        color: #ffffff;
+        padding: 0px 10px;
+        margin: 10px 10px;
+    }
+    #curated-playlists section img{
+        float:left;
+    }
+    #curated-playlists h2{
+        color:#590242;
+        font-weight: bold;
+        font-size: 1.25em;
+        padding: 10px;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    #curated-playlists h3{
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+    }
+    #curated-playlists div p{
+        padding: 5px;
+        text-align: center;
+    }
+    #curated-playlists .btn{
+        float: right;
+        background-color: #590242;
+        color: #ffffff;
+        padding: 10px;
+        margin: 10px 25px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+    }
+    #curated-playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+        width: 15px;
+    }
+    #curated-playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+    #curated-playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+    #curated-playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+}
