@@ -387,6 +387,7 @@ footer p{
     color: #590242;
 }
 
+
 /* media styles */
 @media screen and (min-width: 834px){
     body {
@@ -467,6 +468,21 @@ footer p{
         width: 100%;
     }
 
+    /* trending */
+    #trending .btn{
+        display: inline-block;
+        background-color: #590242;
+        color: #ffffff;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 636px;
+        margin-right: 25;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+    }
+    
     /* your playlist */
     #your-playlists div{
         display: grid;
